@@ -1,21 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-	<title>Qual operadora</title>
-	<meta name="resource-types" content="document" />
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta name="robots" content="all" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="language" content="pt-br" />
-	
+  <meta charset="UTF-8">
+
+  <title>Qual é a operadora?</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body ng-app ng-controller="simpleController">
 
-<div align="center">
-	
-	<input type="tel" name="telefone"> </br>
-	<button type="button"> Buscar </button>
+
+<form name="formulario" class="css-form" ng-submit="teste()" novalidate>
+
+
+    <label for="telefone">Telefone</label>
+    <input id="telefone" type="text" placeholder="Telefone" ng-model="telefone" name="telefone" required autofocus/>
+
+
+  <button type="submit" title="Buscar" ng-disabled="formulario.$invalid">Buscar</button>
+  <p ng-show="formulario.telefone.$invalid && !formulario.telefone.$pristine" class="help-block">O telefone é
+    obrigatório!</p>
+
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="js/controllers/simpleController.js"></script>
+
 
 </body>
+
 </html>
