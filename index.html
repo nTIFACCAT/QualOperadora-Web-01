@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+ 	<meta charset="UTF-8">
 
-  <title>Qual é a operadora?</title>
+  	<title>Qual é a operadora?</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/style.css">
+
+  	<script src=""></script>
+	
 </head>
 
-<body ng-app ng-controller="simpleController">
+
+<body>
 
 
-<form name="formulario" class="css-form" ng-submit="teste()" novalidate>
+<form>
 
 
-    <label for="telefone">Telefone</label>
-    <input id="telefone" type="text" placeholder="Telefone" ng-model="telefone" name="telefone" required autofocus/>
+    <label >Telefone</label>
+    <input id="telefone" type="text" name="telefone" required autofocus/>
 
-
-  <button type="submit" title="Buscar" ng-disabled="formulario.$invalid">Buscar</button>
-  <p ng-show="formulario.telefone.$invalid && !formulario.telefone.$pristine" class="help-block">O telefone é
-    obrigatório!</p>
+ 
 
 </form>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-<script src="js/controllers/simpleController.js"></script>
-
-
 </body>
-
 </html>
