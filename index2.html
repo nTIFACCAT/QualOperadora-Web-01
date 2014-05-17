@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+  <meta charset="UTF-8">
+
+  <title>Qual é a operadora?</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body ng-app ng-controller="simpleController">
+
+<div id="corpo">
+
+  <h1>Qual é a operadora?</h1>
+
+  <form name="formulario" id="consulta" ng-submit="verifica()">
+
+    <label for="telefone">Digite o telefone:</label>
+    <div class="clear"></div>
+    <input id="telefone" type="text" placeholder="Telefone" ng-model="telefone" name="telefone" required autofocus/>
+
+    <input id="verificar" type="submit" name="verificar" value={{verificar}} class="botao"
+           ng-disabled="formulario.$invalid"/>
+
+  </form>
+
+  <div id="resultado" align="center" ng-show="dados !== undefined">
+
+    <div>
+      <strong>Número</strong>
+      <span class="telefone">{{dados.telefone}}</span>
+    </div>
+
+    <div>
+      <strong>Operadora</strong>
+      <span class="telefone">{{dados.operadora}}</span>
+    </div>
+
+    <div>
+      <strong>Portabilidade</strong>
+      <span class="telefone">{{dados.portabilidade}}</span>
+    </div>
+    <div>
+      <strong>Estado</strong>
+      <span class="telefone">{{dados.portabilidade}}</span>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script src="js/script2.js"></script>
+
+</body>
+
+</html>
