@@ -1,7 +1,54 @@
-.css-form input.ng-invalid.ng-dirty {
-  background-color: #FA787E;
+/*
+	Reset do CSS
+	(MUITO importante)
+*/
+
+* {
+ 	padding: 0px;
+  	border: 0px;
+  	margin: 0px;
+  	vertical-align:baseline;
 }
 
-/*.css-form input.ng-valid.ng-dirty {*/
-  /*background-color: #78FA89;*/
-/*}*/
+body {
+  	color: #666;
+  	font: 11px 'Open Sans';s
+}
+
+a {
+  color: #666;
+}
+
+a:active, a:link, a:visited,  a:hover {
+  text-decoration: none;
+}
+
+form fieldset {
+  border:0px;
+}
+
+form legend {
+  display:none;
+}
+
+ul, li {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+table caption {
+  display:none;
+}
+
+/*
+	Classe que força a quebra do elemento (ééé mais ou menos)
+*/
+.clear {
+  display:block;
+  clear:both;
+}
+
+
+
+
