@@ -18,19 +18,35 @@
 
 		<h1>QualOperadora</h1>
 
+
 		<form id="consulta">
 			<label>Digite o telefone:</label>
 			<div class="clear"></div>
 		    <input id="telefone" type="text" name="telefone" required autofocus/>
-
-		    <div class="clear"></div>
+	
 			<input id="verificar" type="submit" name="verificar" value="Verificar" class="botao" />
 		</form>
 
-		<div id="resultado">
-			<span class="telefone">51 98470879</span>
-			<div class="clear"></div>
-			<span class="operadora">Vivo</span>
+		
+
+		<div id="resultado" align="center" style="display: none">
+			<div>
+				<strong>Número</strong>
+				<span class="telefone"></span>
+			</div>
+
+			<div>
+				<strong>Operadora</strong>
+				<span class="operadora"></span>
+			</div>
+			<div>
+				<strong>Portabilidade</strong>
+				<span class="portabilidade"></span>
+			</div>
+			<div>
+				<strong>Estado</strong>
+				<span class="estado"></span>
+			</div>
 		</div>
 
 
