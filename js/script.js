@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	$('#verificar').unbind("click").click(function(a) {
 		a.preventDefault();
-		$("#verificar").val('Pesquisando...');
 		var tel = $("#telefone").val();
+		
+		$("#verificar").val('Pesquisando...');
 		$.ajax({
 		  type: "GET",
 		  url: "http://qualoperadora.herokuapp.com/consulta/"+tel,
