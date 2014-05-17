@@ -7,7 +7,8 @@
 
   	<link rel="stylesheet" href="css/style.css">
 
-  	<script src=""></script>
+  	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  	<script src="js/script.js"></script>
 	
 </head>
 
@@ -17,17 +18,18 @@
 
 		<h1>QualOperadora</h1>
 
-		<form action="" method="" />
-
+		<form>
 			<label>Telefone</label>
 		    <input id="telefone" type="text" name="telefone" required autofocus/>
 		    <div class="clear"></div>
-			<input type="submit" name="verificar" value="Verificar" class="botao" />
+			<input id="verificar" type="submit" name="verificar" value="Verificar" class="botao" />
 
 		</form>
 
 		<div id="resultado">
-
+			<span class="telefone">51 98470879</span>
+			<div class="clear"></div>
+			<span class="operadora">Vivo</span>
 		</div>
 
 	</div>
