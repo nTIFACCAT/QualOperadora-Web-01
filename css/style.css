@@ -5,14 +5,13 @@
 
 * {
  	padding: 0px;
-  	border: 0px;
-  	margin: 0px;
-  	vertical-align:baseline;
+	border: 0px;
+	margin: 0px;
+  font-family: 'Open Sans';
 }
 
 body {
-  	color: #666;
-  	font: 11px 'Open Sans';
+  	color: #000;
 }
 
 a {
@@ -57,20 +56,14 @@ table caption {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -100px;
+	margin-top: -180px;
 	margin-left: -200px;
-
-	border: 1px solid #ccc;
 }
 
 #corpo h1 {
-  display: block;
-  margin: 20px 0 30px 0;
+  margin: 10px 0 30px 0;
 }
 
-#corpo form {
-  display: block;
-}
 
 #corpo .botao {
   margin-top: 30px;
@@ -80,7 +73,6 @@ table caption {
 #resultado {
   display: block;
   margin-top: 10px;
-  border: 1px solid #ccc;
 }
 
 #resultado span {
