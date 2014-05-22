@@ -99,7 +99,7 @@ table caption {
 #resultado {
   display: block;
   float: left;
-  width: 400px;
+  width: 450px;
   margin-top: 20px;
 }
 
@@ -121,11 +121,62 @@ table caption {
 }
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: portrait) {
-  body {
+@media only screen and (min-device-width: 350px) and (max-device-width: 768px) and (orientation: portrait) {
+  #corpo {
+    width: 350px;
+    margin-left: -175px;
+    margin-top: -200px;
+  }
+  #resultado {
+    width: 350px;
+  }
+  #consulta {
+    width: 300px;
+    margin-left: 7%;
+  }
 
-    width: 80%;
-    padding: 0 3% 0 3%;
+  #corpo h1 {
+    margin-left: 10%;
+  }
+
+
+  #consulta input {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  #consulta .botao {
+    margin-left: 0px;
+  }
+
+}
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 768px) and (orientation: landscape) {
+  #corpo {
+    width: 350px;
+    margin-left: -175px;
+    margin-top: -200px;
+  }
+  #resultado {
+    width: 350px;
+  }
+  #consulta {
+    width: 300px;
+    margin-left: 7%;
+  }
+
+  #corpo h1 {
+    margin-left: 10%;
+  }
+
+
+  #consulta input {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  #consulta .botao {
+    margin-left: 0px;
   }
 
 }
